@@ -25,6 +25,7 @@ Answer
 - Customer B spent $74
 - Customer C spent $36
 
+---
 
 2. How many days has each customer visited the restaurant?
 ~~~~sql
@@ -44,6 +45,7 @@ Answer
 - Customer B visited 6 times
 - Customer C visited 2 times
 
+---
 
 3. What was the first item from the menu purchased by each customer?
 ~~~~sql
@@ -70,6 +72,7 @@ Answer
 - Customer B ordered Curry for their first order
 - Customer C ordered Ramen for their first order
 
+---
 
 4. What is the most purchased item on the menu and how many times was it purchased by all customers?
 ~~~~sql
@@ -88,6 +91,7 @@ Answer
 
 - Most ordered Dish is Ramen with 8 orders
 
+---
 
 5. Which item was the most popular for each customer?
 ~~~~sql
@@ -115,6 +119,7 @@ Answer
 - Curry, Sushi and Ramen are the most popular for Customer B
 - Ramen is the most popular for Customer C
 
+---
 
 6. Which item was purchased first by the customer after they became a member?
 ~~~~sql
@@ -139,6 +144,7 @@ Answer
 - Customer A ordered Ramen after becoming a member
 - Customer B ordered Sushi after becoming a member
 
+---
 
 7. Which item was purchased just before the customer became a member?
 ~~~~sql
@@ -161,6 +167,7 @@ Answer
 
 - Customer A and Customer B both ordered Sushi just before becoming a member
 
+---
 
 8. What is the total items and amount spent for each member before they became a member?
 ~~~~sql
@@ -182,6 +189,7 @@ Answer
 - Customer A spent $25 on 2 products before becoming a member
 - Customer B spent $40 on 3 products before becoming a member
 
+---
 
 9. If each $1 spent equates to 10 points and sushi has a 2x points multiplier - how many points would each customer have?
 ~~~~sql
@@ -209,6 +217,7 @@ Answer
 - Customer B has 940 points
 - Customer C has 360 points
 
+---
 
 10. In the first week after a customer joins the program (including their join date) they earn 2x points on all items, not just sushi - how many points do customer A and B have at the end of January?
 ~~~~sql
