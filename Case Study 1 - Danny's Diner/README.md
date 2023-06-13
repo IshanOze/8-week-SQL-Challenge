@@ -13,3 +13,10 @@ from sales s
 join menu m on m.product_id = s.product_id
 group by customer_id;
 ~~~~
+
+Answer
+| customer_id | total_spent |
+|-------------|-------------|
+| A           | 76          |
+| B           | 74          |
+| C           | 36          |
