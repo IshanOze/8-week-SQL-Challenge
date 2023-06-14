@@ -7,9 +7,10 @@
 
 ### CLEANING
 
+#### CREATE NEW TABLE WITH CLEANED VALUES
 ~~~~sql
 
-#### CREATE NEW TABLE WITH CLEANED VALUES
+
 create table customer_orders as
 select order_id, customer_id, pizza_id,
 case
@@ -48,8 +49,10 @@ case
 end as cancellation
 from temp_runner_orders;
 ---
+~~~~
 
 #### CHANGE THE COLUMN TYPE OF THE TABLE
+~~~~sql
 
 -- drop the temp tables
 drop table temp_customer_orders;
