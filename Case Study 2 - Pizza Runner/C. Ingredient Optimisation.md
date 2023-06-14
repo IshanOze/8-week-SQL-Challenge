@@ -70,7 +70,7 @@ Answer
 
 #### 4. Generate an order item for each record in the customers_orders table in the format of one of the following:
 
-#####Meat Lovers
+##### Meat Lovers
 ~~~~sql
 select order_id
 from customer_orders
