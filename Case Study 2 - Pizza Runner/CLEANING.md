@@ -82,6 +82,33 @@ update runner_orders
 set duration = cast(duration as float)
 where duration not like ' ';
 
+
+-- unpack the values separated by comma
+-- done in excel by using Text to Columns feature and then transposing into rows
+update pizza_recipes
+set toppings = cast(toppings as float);
+
+delete
+from pizza_recipes
+where pizza_id >= 1;
+
+INSERT INTO pizza_recipes
+  (pizza_id, toppings)
+VALUES
+  (1, 1),
+  (1, 2),
+  (1, 3),
+  (1, 4),
+  (1, 5),
+  (1, 6),
+  (1, 8),
+  (1, 10),
+  (2, 4),
+  (2, 6),
+  (2, 7),
+  (2, 9),
+  (2, 11),
+  (2, 12)
 ~~~~
 ---
 
