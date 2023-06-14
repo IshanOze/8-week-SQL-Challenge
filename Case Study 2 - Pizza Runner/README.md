@@ -102,6 +102,8 @@ Answer
 
 - 14 Pizzas are ordered in total
 
+---
+
 2. How many unique customer orders were made?
 ~~~~sql
 select count(distinct order_id) as unique_customer_orders
@@ -114,6 +116,8 @@ Answer
 | 10                     |
 
 - There are 10 unique customer orders
+
+---
 
 3. How many successful orders were delivered by each runner?
 ~~~~sql
@@ -134,6 +138,8 @@ Answer
 - Runner with id 2 delivered 3 orders successfully
 - Runner with id 3 delivered 1 orders successfully
 
+---
+
 4. How many of each type of pizza was delivered?
 ~~~~sql
 select pizza_name, count(c.order_id)
@@ -151,6 +157,8 @@ Answer
 | Vegetarian  | 3            |
 
 - A total of 9 Meatlovers Pizza and 3 Vegetarian Pizza are ordered
+
+---
 
 5. How many Vegetarian and Meatlovers were ordered by each customer?
 ~~~~sql
@@ -179,6 +187,7 @@ Answer
 - Customer 104 ordered 3 Meatlovers Pizza 
 - Customer 105 ordered 1 Vegetarian Pizza
 
+---
 
 6. What was the maximum number of pizzas delivered in a single order?
 ~~~~sql
@@ -203,6 +212,8 @@ Answer
 | 8        | 1               |
 
 - The maximum number of pizzas delivered in a single order are 3
+
+---
 
 7. For each customer, how many delivered pizzas had at least 1 change and how many had no changes?
 ~~~~sql
@@ -237,6 +248,8 @@ Answer
 - Customer with ID 104 had 2 pizzas with atleast 1 change and 1 pizzas with no changes
 - Customer with ID 105 had 1 pizzas with atleast 1 change and 0 pizzas with no changes
 
+---
+
 8. How many pizzas were delivered that had both exclusions and extras?
 ~~~~sql
 select customer_id, pizza_name, sum(c.pizza_id) as exclusions_extras_count
@@ -253,6 +266,8 @@ Answer
 | 104         | Meatlovers | 1                       |
 
 - Customer with ID 104 ordered Meatlovers pizza with both exclusions and extras
+
+---
 
 9. What was the total volume of pizzas ordered for each hour of the day?
 ~~~~sql
@@ -273,6 +288,8 @@ Answer
 | 23          | 3      |
 
 - Highest volume of pizza is at 1.00pm, 6.00pm, 9.00pm and 11.00pm 
+
+---
 
 10. What was the volume of orders for each day of the week?
 ~~~~sql
